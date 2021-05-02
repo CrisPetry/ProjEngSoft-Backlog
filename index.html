@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BackLog de Leituras</title>
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<link rel="stylesheet" href="estilo.css" type="text/css"/>
+	<link rel="sortcut icon" href="book.png" type="image/gif">
+</head>
+<body>
+	<form id="frmCadastro">
+		<img src="stakeofbooks.gif" id="sob" alt="pilhalivros" width="350" height="350">
+		<h1>Backlog de Leituras</h1>
+		<ul>
+			<li>
+				<label for="txtCodigo">Código:</label>
+				<input type="number" id="txtCodigo" step="1" min="1" required placeholder="Informe o código" />
+			</li><br>
+			<li>
+				<label for="txtTitulo">Título:</label>
+				<input type="text" id="txtTitulo" required size="70"  placeholder="Informe o título"/>
+			</li><br>
+			<li>
+				<label for="txtAutor">Autor:</label>
+				<input type="text" id="txtAutor" required size="50"  placeholder="Insira o autor"/>
+			</li><br>
+			<li>
+				<label for="txtAno">Ano:</label>
+				<input type="number" id="txtAno" min="1900" max="2021" placeholder="1900-21" required/>
+			</li><br>
+			<li>
+				<label for="txtGenero">Gênero:</label>
+				<select id="txtGenero" name="Gênero">
+					<option value="Ficção Científica">Ficção Científica</option>
+					<option value="Terror">Terror</option>
+					<option value="Drama">Drama</option>
+					<option value="Quadrinhos">Quadrinhos</option>
+					<option value="Mangá">Mangá</option>
+					<option value="História">História</option>
+					<option value="Romance">Romance</option>
+					<option value="Biografia">Biografia</option>
+				</select>
+			</li><br>
+			<li>
+				<label for="txtPagina">Páginas:</label>
+				<input type="number" id="txtPagina" min="1" required/>
+			</li><br>
+			<li>
+				<input type="submit" value="Salvar" class="btnSave"/>
+			</li>
+		</ul>
+	</form><br><br>
+	<script src="funcoes.js"></script>
+	<table id="tblListar">
+
+	</table>
+</body>
+</html>
