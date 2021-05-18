@@ -1,6 +1,6 @@
 $(function(){
 
-	var operacao = "A"; //"A"=Adição; "E"=Edição
+	var operacao = "A"; 
 
 	var indice = -1;
 
