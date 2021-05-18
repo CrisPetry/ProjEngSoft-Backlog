@@ -51,6 +51,7 @@ $(function(){
 		return true;
 	}
 
+
 	function Listar(){
 		$("#tblListar").html("");
 		$("#tblListar").html(
